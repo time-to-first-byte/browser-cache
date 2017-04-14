@@ -22,17 +22,18 @@ class Perfthemes_bc_activator {
 
 		// Apache server detection
 		if( !perfthemes_bc_is_apache() ) {
-			echo __( 'This plugin require an Apache server.', 'perfthemes-browser-cache' );
-			die();
+			//echo __( 'This plugin require an Apache server.', 'perfthemes-browser-cache' );
+			//die();
+            add_action( 'admin_notices', 'perfthemes_not_apache' );
 		}
 
 
 		// Attempt to manage file permissions
 		if( !perfthemes_bc_writtable_htaccess() ) {
-			echo __( "Permission denied to write to required file.", 'perfthemes-browser-cache' );
-			die();
+			//echo __( "Permission denied to write to required file.", 'perfthemes-browser-cache' );
+			//die();
+            add_action( 'admin_notices', 'perf_autoptimize_admin_notice' );
 		}
-
 
 		// Insert rules
 		Perfthemes_bc_rules::write_rules();
