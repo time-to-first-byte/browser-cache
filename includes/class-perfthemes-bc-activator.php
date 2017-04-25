@@ -24,7 +24,7 @@ class Perfthemes_bc_activator {
 		if( !perfthemes_bc_is_apache() ) {
 			//echo __( 'This plugin require an Apache server.', 'perfthemes-browser-cache' );
 			//die();
-            add_action( 'admin_notices', 'perfthemes_not_apache' );
+            		add_action( 'admin_notices', 'perfthemes_not_apache' );
 		}
 
 
@@ -32,7 +32,7 @@ class Perfthemes_bc_activator {
 		if( !perfthemes_bc_writtable_htaccess() ) {
 			//echo __( "Permission denied to write to required file.", 'perfthemes-browser-cache' );
 			//die();
-            add_action( 'admin_notices', 'perf_autoptimize_admin_notice' );
+            		add_action( 'admin_notices', 'perfthemes_not_writtable_htaccess' );
 		}
 
 		// Insert rules
