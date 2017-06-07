@@ -23,14 +23,12 @@ class Perfthemes_bc_activator {
 
 		// Apache server detection
 		if( !perfthemes_bc_is_apache() ) {
-			cancel_perfthemes_activation(__("Perfthemes Browser Cache cannot be installed : Permission denied to write to required file.", "perfthemes-browser-cache"));
 			return false;
 		}
 
 
 		// Attempt to manage file permissions
 		if( !perfthemes_bc_writtable_htaccess() ) {
-			cancel_perfthemes_activation(__("Perfthemes Browser Cache cannot be installed : This plugin require an Apache server.", "perfthemes-browser-cache"));
 			return false;
 		}
 
