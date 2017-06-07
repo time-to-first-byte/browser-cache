@@ -52,6 +52,10 @@ register_deactivation_hook( __FILE__, 'deactivate_perfthemes_bc' );
 
 require plugin_dir_path( __FILE__ ) . 'includes/class-perfthemes-bc.php';
 
+function cancel_perfthemes_activation($msg) {
+	deactivate_plugins( plugin_basename( __FILE__ ) );
+	exit($msg);
+}
 
 function run_perfthemes_bc() {
 
