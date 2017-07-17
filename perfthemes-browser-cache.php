@@ -3,15 +3,15 @@
 /**
  * @link              https://perfthemes.com/
  * @since             1.0.0
- * @package           perfthemes-browser-cache
+ * @package           browser-cache
  *
  * @wordpress-plugin
- * Plugin Name:       Perfthemes Browser Cache
- * Plugin URI:        https://perfthemes.com/perfthemes-browser-cache/
+ * Plugin Name:       TTFB Browser Cache
+ * Plugin URI:        https://github.com/time-to-first-byte/browser-cache/
  * Description:       Simple plugin to add performance rules for Perfthemes themes
  * Version:           1.0.0
- * Author:            Perfthemes
- * Author URI:        https://perfthemes.com/
+ * Author:            TTFB
+ * Author URI:        https://ttfb.io/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       perfthemes
